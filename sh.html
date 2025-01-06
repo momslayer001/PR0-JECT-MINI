@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probability Calculator</title>
+  <link rel="stylesheet" href="sh.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>หาความเป็นไปได้</h1>
+    <label for="totalOutcomes">ผลลัพธ์ทั้งหมด (เช่น : ลูกเต๋าที่มีหกด้านให้ใส่เลข 6 ):</label>
+    <input type="number" id="totalOutcomes" placeholder="จำนวนผลลัพธ์ทั้งหมด" required>
+    
+    <label for="favorableOutcomes">ผลลัพธ์ที่ต้องการ (เช่น : ต้องการเลข 1):</label>
+    <input type="number" id="favorableOutcomes" placeholder="ผลลัพธ์ที่ต้องการ" required>
+    
+    <button onclick="calculateProbability()">หาค่า</button>
+    
+    <div id="result"></div><br>
+   
+    
+     <button><a href="index.html">HOME PAGE</a></button>
+     <button><a href="me.html">My Profile</a></button>
+     <button><a href="f.html">หาพื้นที่</a></button>
+    
+  </div>
+  <script src="sh.js"></script>
+  
+</body>
+</html>

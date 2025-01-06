@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    
+</head>
+<body>
+   
+<link rel="stylesheet" href="me.css">
+ 
+    <div class="header">
+         
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; เมนู</span>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">HOME PAGE</a>
+              <a href="sh.html">หาความเป็นไปได้</a>
+              <a href="f.html">หาพื้นที่</a>
+              
+            </div>
+          </div>
+          
+    </div>
+
+   
+    <div class="container">
+      
+        <div class="sidebar">
+            <ul>
+                <li onclick="showContent('ABOUT ME')">ABOUT ME</li>
+                <li onclick="showContent('EDUCATION')">EDUCATION</li>
+                <li onclick="showContent('HOBBY')">HOBBY</li>
+                <li onclick="showContent('FRIEND')">FRIEND</li>
+                
+            </ul>
+        </div>
+
+       
+        <div class="profile">
+            <div class="profile-header">
+                <img src="punn4.jpg" alt="Profile Picture" title="𝐆𝐎𝐃_𝐒𝐋𝐀𝐘𝐄𝐑">
+
+                <div>
+                    <h2>𝐆𝐎𝐃_𝐒𝐋𝐀𝐘𝐄𝐑</h2><br>
+                   
+                    <p>ꜱʟᴇᴇᴘʏ ɢᴜʏ | ɢᴀᴍᴇʀ | ᴅʀᴇᴀᴍᴇʀ</p>
+                </div>
+            </div>
+
+           
+            <div id="ABOUT ME" class="profile-content">
+                <h2>ABOUT ME</h2>
+                <p>ชื่อ : ปัณณ์ ก๊กผล <br>
+                    ชื่อเล่น : ปัน<br>
+                อายุ : 16 <br>
+                วันเกิด <br>
+             วันที่ 4 ธันวาคม 2551
+            </p>
+            </div>
+            <div id="EDUCATION" class="profile-content">
+                <h2>education</h2>
+                <p>การศึกษา <br>
+                    โรงเรียน อนุบาลสมุทรสาคร <br>
+                    โรงเรียน เทศบาลบ้านมหาชัย <br>
+                    วิทยาลัย เทคนิคสมุทรสาคร
+                </p>
+            </div>
+            <div id="HOBBY" class="profile-content">
+                <h2>Hobby</h2>
+                <p>เล่นเกม วาดรูป สร้างเกม ปั้นโดล ดีไซฉาก</p>
+            </div>
+            <div id="FRIEND" class="profile-content">
+                <h2>FRIEND</h2>
+
+                <div class="profile">
+                    <div class="profile-header">
+                        <img src="beer.png" alt="Profile Picture" title="𝕻𝖔𝖗𝖆𝖒𝖎𝖓 𝕾𝖚𝖉𝖘𝖆𝖓𝖌𝖚𝖆𝖓">
+        
+                        <div>
+                            <h4>𝕻𝖔𝖗𝖆𝖒𝖎𝖓 𝕾𝖚𝖉𝖘𝖆𝖓𝖌𝖚𝖆𝖓</h4><br>
+            </div>
+            <div class="profile">
+                <div class="profile-header">
+                    <img src="e.jpg" alt="Profile Picture" title="สาคู อุราอุเมะ  (🆉🅰🆁🅰🅺🅸)">
+    
+                    <div>
+                        <h4>สาคู อุราอุเมะ  (🆉🅰🆁🅰🅺🅸)</h4><br>
+        </div>
+        <div class="profile">
+            <div class="profile-header">
+                <img src="n.jpg" alt="Profile Picture" title="𝙉𝙖𝙩𝙖𝙬𝙖𝙩 𝙆𝙋">
+
+                <div>
+                    <h4>𝙉𝙖𝙩𝙖𝙬𝙖𝙩 𝙆𝙋</h4><br>
+    </div>
+
+           
+
+        </div>
+    </div>
+
+
+    
+
+ 
+
+    <script>
+        function showContent(sectionId) {
+          
+            const sections = document.querySelectorAll('.profile-content');
+            sections.forEach(section => section.classList.remove('active'));
+
+          
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+       
+        window.onload = function() {
+            document.getElementById('popup').style.display = 'flex';
+        };
+    </script>
+
+
+
+
+
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
+
+
+</body>
+</html>
